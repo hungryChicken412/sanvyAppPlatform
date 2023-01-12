@@ -4,15 +4,7 @@ import styles from "../../../styles/Home.module.css";
 import Link from "next/link";
 
 function Login() {
-	const loginUser = (e) => {
-		console.log("login");
-		e.preventDefault();
-		let username = e.target.username.value;
-		let password = e.target.password.value;
-		console.log(username);
-
-		console.log(e);
-	};
+	
 
 	return (
 		<>
@@ -28,7 +20,7 @@ function Login() {
 						height={100}
 					/>
 					<h2 style={{ paddingBottom: 40 }}> Sign in</h2>
-					<form onSubmit={loginUser}>
+					<form >
 						<div className="input_area">
 							<label>
 								<i className="fa-solid fa-user-tie"></i>
