@@ -10,16 +10,6 @@ import "slick-carousel/slick/slick-theme.css";
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
-	const login = (e) => {
-		console.log("login");
-		e.preventDefault();
-		let username = e.target.username.value;
-		let password = e.target.password.value;
-		console.log(username);
-
-		console.log(e);
-	};
-
 	return (
 		<>
 			<Head>
