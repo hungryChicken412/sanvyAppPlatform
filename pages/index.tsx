@@ -2,8 +2,7 @@ import Head from "next/head";
 
 import { Inter } from "@next/font/google";
 import styles from "../styles/Home.module.css";
-
-import Slider from "react-slick";
+import Link from "next/link";
 
 // Import css files
 import "slick-carousel/slick/slick.css";
@@ -42,8 +41,12 @@ export default function Home() {
 						<img src="/logo.png" alt="logo" />
 					</div>
 					<div className="navlinks">
-						<a href="#"> Book a demo</a>
-						<a href="#">Sign in</a>
+						<a href="mailto:vatsalshukla2001@gmail.com">
+							{" "}
+							Book a demo
+						</a>
+
+						<Link href=" /auth/login">Sign in </Link>
 					</div>
 				</div>
 
